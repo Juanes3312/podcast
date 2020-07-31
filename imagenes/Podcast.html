@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast</title>
+  <link rel="stylesheet" type="text/css" href="./Podcast_files/style.css">
+</head>
+
+<body>
+  <nav>
+    <img src="./Podcast_files/logo.svg" name="logo" id="logo" alt="Logo">
+    <div class="menu">
+      <div>Episodios</div>
+      <div>Nosotros</div>
+      <div>Entrevistas</div>
+    </div>
+  </nav>
+
+  <header>
+  <div class="titulo">
+    <h1>Hello <u>world</u> pale blue dot</h1>
+    <p>El portal de podcasts que explora el mundo de la
+      programación y la tecnología. Nuevos episodios,
+      todos los jueves cada 15 días.
+    </p>
+    <button>
+      <p>Conoce mas</p>
+    </button>
+  </div> 
+  </header>
+  <section class="podcasts">
+    <div class="episodios">
+      <iframe src="./Podcast_files/7AZZy2nJ4R9ZndHW0h2yxt.html" width="20%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="./Podcast_files/1ezdL2ivAGLwSE6Xbssxqt.html" width="20%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="./Podcast_files/3cWta1iiQSfvrdHaCbLkSD.html" width="20%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe src="./Podcast_files/31VyAQAwBiKoHVoYUCEzjQ.html" width="20%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </section>
+  <div class="donde">
+    <div>
+      <img src="./Podcast_files/phone.png" name="phone" id="phone" alt="imagen phone">
+    </div>
+    <div>
+      <h2>De dónde venimos</h2>
+      <p>
+        Our posturings, our imagined self-importance, the delusion that we have some privileged position
+        in the Universe, are challenged by this point of pale light.
+        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+        there is no hint that help will come from elsewhere to save us from ourselves.
+      </p>
+    </div>
+
+  </div>
+  <div>
+    <h2>Invitadas/os estelares</h2>
+  </div>
+  <div>
+    <img src="./Podcast_files/grace-hopper.png" name="grace" id="grace" alt="grace">
+    <img src="./Podcast_files/Katie-Bouman.png" name="Katie" id="katie" alt="katie">
+    <img src="./Podcast_files/Margaret_Hamilton.png" name="marget" id="marget" alt="foto de marget">
+    <img src="./Podcast_files/An E.R.A.Univac 1103 computer in the 1950s.png" name="era" id="era" alt="foto de era">
+    <img src="./Podcast_files/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" name="Eniac" id="Eniac" alt="eniac">
+    <img src="./Podcast_files/susan-kare.png" name="susan-kare" id="susan" alt="foto de susankare">
+  </div>
+  <section class="nuestrostemas">
+    <h2>Algunos de nuestros temas</h2>
+    <div>
+      <img src="./Podcast_files/icon1.svg" name="trabajo remoto" id="trabajo" alt="foto de trabajo remoto">
+      <p>Trabajo remoto</p>
+    </div>
+    <div>
+      <img src="./Podcast_files/icon2.svg" name="repensando" id="repensando" alt="foto de repensando">
+      <p>Repensando la programación</p>
+    </div>
+    <div>
+      <img src="./Podcast_files/icon3.svg" name="bases" id="bases" alt=" foto de bases">
+      <p>Bases del codigo</p>
+    </div>
+    <div>
+      <img src="./Podcast_files/icon4.svg" name="Seguridad" id="seguridad" alt="foto de seguridad">
+    </div>
+  </section>
+  <section class="ultimas novedades">
+    <div class="novedades">
+      <h2> ¿Quieres las ultimas novedades?</h2>
+      <button> ESCUCHÁ LOS EPISODIOS</button>
+    </div>
+  </section>
+  <footer>
+    <p>© 2019— Hello blue pale dot </p>
+
+  </footer>
+
+
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
