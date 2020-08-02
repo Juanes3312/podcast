@@ -18,31 +18,35 @@
   src: url(fonts/IBMPlexSans-Light.ttf);
 }
 
+@font-face {
+  font-family: ibmplexsanssemibold;
+  src: url(fonts/IBMPlexSans-SemiBold.ttf);
+}
+
+/*barra de navegacion*/
 #logo {
   width: 36px;
   height: 36px;
 }
 
-p {
-  font-family: ibmplexsans;
+.btn-menu {
+  display: none;
+  -webkit-transform: translateX(95%);
+          transform: translateX(95%);
+  width: 100%;
 }
 
-h1 p {
-  color: blue;
-  display: inline-block;
+.btn-menu input {
+  display: none;
 }
 
-h1 {
-  font-family: ibmplexsans;
-  font-size: 64px;
+.btn-menu label:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.world {
-  text-decoration: line-through;
-}
-
-.portal {
-  font-family: ibmplexmono;
+.btn-menu i {
+  margin: 3%;
 }
 
 nav img {
@@ -62,22 +66,50 @@ nav ul {
 }
 
 nav li {
-  padding-left: 25%;
+  display: inline-block;
   font-family: ibmplexmono;
   font-size: 16px;
+  padding-left: 3%;
+  padding-right: 6%;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 160%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+/*titulo*/
+.world {
+  text-decoration: line-through;
+}
+
+.portal {
+  font-family: ibmplexmono;
+}
+
+p {
+  font-family: ibmplexsans;
+}
+
+h1 p {
+  color: blue;
+  display: inline-block;
+}
+
+h1 {
+  font-family: ibmplexsans;
+  font-size: 64px;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
 }
 
 .titulo {
-  height: 30vmin;
+  height: 50vmin;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,78 +120,12 @@ nav li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
 }
 
 button {
   width: 10%;
-}
-
-.podcasts {
-  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-  height: 100vmin;
-  -webkit-clip-path: polygon(0 8%, 100% 0%, 100% 81%, 0% 100%);
-          clip-path: polygon(0 8%, 100% 0%, 100% 81%, 0% 100%);
-}
-
-.podcasts h2 {
-  font-family: ibmplexsans;
-  color: white;
-  font-size: 50px;
-  -webkit-transform: translate(10%, -20%);
-          transform: translate(10%, -20%);
-}
-
-.box {
-  /* border: 1px solid red;*/
-  width: 70%;
-  height: auto;
-  -webkit-transform: translateX(19%);
-          transform: translateX(19%);
-  padding-top: 5%;
-}
-
-.box h2 {
-  font-size: 48px;
-  font-family: ibmplexsans;
-  -webkit-transform: translate(5%, 0%);
-          transform: translate(5%, 0%);
-}
-
-.box p {
-  font-size: 20px;
-  font-family: ibmplexmono;
-  -webkit-transform: translate(5%, 40%);
-          transform: translate(5%, 40%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: left;
-}
-
-.episodios {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-iframe {
-  width: 100%;
-}
-
-.phone {
-  position: relative;
-}
-
-.donde {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 button {
@@ -179,5 +145,135 @@ button {
 button:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
+}
+
+/*Episodios*/
+.podcasts {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  height: 150vmin;
+  -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 81%, 0% 100%);
+          clip-path: polygon(0 10%, 100% 0%, 100% 81%, 0% 100%);
+}
+
+.podcasts h2 {
+  font-family: ibmplexsans;
+  color: white;
+  font-size: 50px;
+  -webkit-transform: translate(10%, 260%);
+          transform: translate(10%, 260%);
+}
+
+.episodios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
+}
+
+iframe {
+  width: 90%;
+  height: 230px;
+}
+
+/*donde*/
+.donde {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.donde .box {
+  width: 450px;
+  height: auto;
+  -webkit-transform: translateX(19%);
+          transform: translateX(19%);
+  padding-top: 5%;
+}
+
+.donde .box h2 {
+  font-size: 48px;
+  font-family: ibmplexsans;
+  -webkit-transform: translate(20%, 0%);
+          transform: translate(20%, 0%);
+}
+
+.donde .box p {
+  font-size: 16px;
+  font-family: ibmplexmono;
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+.phone {
+  position: relative;
+  -webkit-transform: translate(10%, -23%);
+          transform: translate(10%, -23%);
+}
+
+.phone img {
+  height: 750px;
+}
+
+/*invitados*/
+.invitados h2 {
+  font-family: ibmplexsans;
+  font-size: 48px;
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+.fotos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.algunostemas h2 {
+  font-size: 48px;
+  font-family: ibmplexsans;
+}
+
+.algunostemas .nuestrostemas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (280px)[4];
+      grid-template-columns: repeat(4, 280px);
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+}
+
+.algunostemas .nuestrostemas div {
+  width: auto;
+}
+
+.algunostemas .nuestrostemas div #trabajo {
+  -webkit-transform: translateX(33%);
+          transform: translateX(33%);
+}
+
+.algunostemas .nuestrostemas div #repensando {
+  -webkit-transform: translateX(22%);
+          transform: translateX(22%);
+}
+
+.algunostemas .nuestrostemas div #bases {
+  -webkit-transform: translateX(38%);
+          transform: translateX(38%);
+}
+
+.algunostemas .nuestrostemas div p {
+  font-family: ibmplexsanssemibold;
+  font-size: 24px;
 }
 /*# sourceMappingURL=style.css.map */

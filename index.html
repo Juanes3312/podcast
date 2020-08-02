@@ -4,14 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Podcast</title>.
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="stylemedia.css">
+  <link rel="shortcut icon" href="imagenes/logo.svg" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/2c5ccac35e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav>
     <img src="imagenes/logo.svg" name="logo" id="logo" alt="Logo">
-    <div class="menu">
+    <div class="btn-menu">
+      <input type="checkbox" id="btn-menu" class="btn-menu">
+      <label for="btn-menu"><i class="fas fa-bars"></i></label>
+    </div>
+    <div class="menu" id="menu">
       <ul>
         <li>
           <div>EPISODIOS</div>
@@ -31,7 +38,8 @@
 
   <header>
     <div class="titulo">
-      <h1>Hello <span class="world">world</span> pale blue dot<p>.</p></h1>
+      <h1>Hello <span class="world">world</span> pale blue dot<p>.</p>
+      </h1>
       <p class="portal">El portal de podcasts que explora el mundo de la
         programación y </br> la tecnología. Nuevos episodios,
         todos los jueves cada 15 días.</p>
@@ -44,20 +52,20 @@
     <h2>Episodios</h2>
     <div class="episodios">
       <div class="box">
-      <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="20%" height="232"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="20%" height="232"
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
-      <div class="box">  
+      <div class="box">
         <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="20%" height="232"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="box">
         <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="20%" height="232"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="box">
         <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="20%" height="232"
-        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
     </div>
   </section>
@@ -67,48 +75,60 @@
     </div>
     <div class="box">
       <h2>De dónde venimos</h2>
-      <P>
-        Our posturings, our imagined self-importance, the delusion</br> that we have some privileged position
-        in the Universe, are challenged</br> by this point of pale light.
+      <p>
+        Our posturings, our imagined self-importance, the delusion that we have some privileged position
+        in the Universe, are challenged by this point of pale light.
+      </p>
       </br>
-        Our planet is a lonely speck in the great enveloping cosmic dark.</br> In our obscurity, in all this vastness,
-        there is no hint that</br> help will come from elsewhere to save us from ourselves.
+      <p>
+        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness,
+        there is no hint that help will come from elsewhere to save us from ourselves.
       </P>
     </div>
-
   </div>
-  <div>
+  <div class="invitados">
     <h2>Invitadas/os estelares</h2>
+      <div class="fotos">
+        <div class="box">   
+          <img src="imagenes/grace-hopper.png" name="grace" id="grace" alt="grace">
+        </div>
+        <div class="box">
+          <img src="imagenes/Katie-Bouman.png" name="Katie" id="katie" alt="katie">
+        </div>
+        <div class="box"> 
+          <img src="imagenes/Margaret_Hamilton.png" name="marget" id="marget" alt="foto de marget">
+        </div>
+        <div class="box"> 
+          <img src="imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" name="era" id="era" alt="foto de era">
+        </div>
+        <div class="box">
+          <img src="imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+          name="Eniac" id="Eniac" alt="eniac">
+        </div>
+        <div class="box">
+          <img src="imagenes/susan-kare.png" name="susan-kare" id="susan" alt="foto de susankare">
+        </div>
+      </div>
   </div>
-  <figure>
-    <div>
-      <img src="imagenes/grace-hopper.png" name="grace" id="grace" alt="grace">
-      <img src="imagenes/Katie-Bouman.png" name="Katie" id="katie" alt="katie">
-      <img src="imagenes/Margaret_Hamilton.png" name="marget" id="marget" alt="foto de marget">
-      <img src="imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" name="era" id="era" alt="foto de era">
-      <img src="imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-        name="Eniac" id="Eniac" alt="eniac">
-      <img src="imagenes/susan-kare.png" name="susan-kare" id="susan" alt="foto de susankare">
-    </div>
-  </figure>
-  <section class="nuestrostemas">
+  <section class="algunostemas">
     <h2>Algunos de nuestros temas</h2>
-    <figure>
+    <div class="nuestrostemas">
       <div>
         <img src="imagenes/icon1.svg" name="trabajo remoto" id="trabajo" alt="foto de trabajo remoto">
         <p>Trabajo remoto</p>
       </div>
       <div>
         <img src="imagenes/icon2.svg" name="repensando" id="repensando" alt="foto de repensando">
-        <p>Repensando la programación</p>
+        <p>Repensando la </br> programación</p>
       </div>
       <div>
         <img src="imagenes/icon3.svg" name="bases" id="bases" alt=" foto de bases">
         <p>Bases del codigo</p>
       </div>
-    </figure>
-    <div>
+      <div>
       <img src="imagenes/icon4.svg" name="Seguridad" id="seguridad" alt="foto de seguridad">
+      <p>Seguridad </br>informatica</p>
+      </div>
     </div>
   </section>
   <section class="ultimas novedades">

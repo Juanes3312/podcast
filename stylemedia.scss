@@ -1,0 +1,44 @@
+@media (max-width:768px){
+
+    h1{
+        font-size: 30px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    
+
+    .btn-menu{
+        display: inline-block; 
+        input{
+            display: unset;
+        }
+    }
+.menu{
+    position: absolute;
+    border: 1px solid blue;
+    width: 100%;
+    transform: translateX(100%);
+    transition: all 0.3s;
+}
+    nav ul{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .donde{
+        display: block;
+    }
+
+    label:hover{
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    #btn-menu :checked ~ *.menu{
+        position: absolute;
+        transform: translateX(-100%);
+    } 
+
+}
