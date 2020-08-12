@@ -16,6 +16,10 @@
     font-size: 80%;
     position: relative;
   }
+  header button {
+    font-size: 3vw;
+    width: 30vw;
+  }
   /* barra de navegacion*/
   #rayas {
     display: -webkit-box;
@@ -249,7 +253,7 @@
   }
   /* episodios*/
   .podcasts {
-    height: 260vw;
+    height: 270vw;
   }
   .podcasts h2 {
     bottom: 10%;
@@ -294,7 +298,21 @@
     font-size: 4vw;
   }
   .ultimasnovedades {
-    height: 70vh;
+    height: 40vh;
+  }
+  .ultimasnovedades h2 {
+    -webkit-transform: translate(-20%, -18%);
+            transform: translate(-20%, -18%);
+  }
+}
+
+@media (max-width: 375px) {
+  .podcasts {
+    height: 335vw;
+  }
+  header button {
+    font-size: 4vw;
+    width: 40vw;
   }
 }
 /*# sourceMappingURL=stylemedia.css.map */

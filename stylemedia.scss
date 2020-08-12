@@ -20,6 +20,10 @@
             position: relative;
             
         }
+        button{
+            font-size: 3vw;
+            width: 30vw;
+        }
     }
 
     /* barra de navegacion*/
@@ -286,7 +290,7 @@
     /* episodios*/
 
     .podcasts{
-        height: 260vw;
+        height: 270vw;
         h2{
             bottom: 10%;
         }
@@ -344,7 +348,24 @@
     }
 
     .ultimasnovedades{
-    height: 70vh;
+    h2{
+        transform: translate(-20%, -18%);
+    }
+    height: 40vh;
     }
 
+}
+
+
+@media(max-width: 375px){
+    .podcasts{
+        height: 335vw;
+    }
+
+    header{
+        button{
+            font-size: 4vw;
+            width: 40vw;
+        }
+    }
 }
