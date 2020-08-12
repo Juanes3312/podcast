@@ -3,13 +3,16 @@
     overflow-x: hidden;
   }
   /*titulo*/
-  .titulo h1 {
+  header {
+    width: auto;
+  }
+  header h1 {
     font-size: 7vw;
     position: relative;
     display: inline-block;
     width: auto;
   }
-  .titulo p {
+  header p {
     font-size: 80%;
     position: relative;
   }
@@ -127,6 +130,7 @@
         align-content: center;
     width: 80vw;
     height: 30vw;
+    overflow-y: hidden;
   }
   /*donde*/
   .donde {
@@ -216,6 +220,7 @@
     width: 50%;
     -webkit-transform: translateY(1%);
             transform: translateY(1%);
+    font-size: 2vw;
   }
 }
 
@@ -231,14 +236,14 @@
     -webkit-transform: translate(20%, 40%);
             transform: translate(20%, 40%);
   }
-  .titulo button {
+  header button {
     position: relative;
     bottom: 15%;
   }
-  .titulo h1 {
+  header h1 {
     font-size: 30px;
   }
-  .titulo h1 p {
+  header h1 p {
     left: 0%;
     font-size: 45px;
   }

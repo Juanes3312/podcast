@@ -5,7 +5,8 @@
     }
 
     /*titulo*/
-    .titulo {
+    header{
+        width: auto;
         h1 {
             font-size: 7vw;
             position: relative;
@@ -128,7 +129,7 @@
             align-content: center;
             width: 80vw;
             height: 30vw;
-           
+           overflow-y: hidden;
         }
     }
 
@@ -235,6 +236,7 @@
             right: 49%;
             width: 50%;
             transform: translateY(1%);
+            font-size: 2vw;
 
         }
 
@@ -262,7 +264,7 @@
         transform: translate(20%, 40%);
     }
 
-    .titulo {
+    header {
         button {
             position: relative;
             bottom: 15%;

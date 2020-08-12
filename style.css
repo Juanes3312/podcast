@@ -3,26 +3,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: ibmplexmono;
-  src: url(fonts/IBMPlexMono-Light.ttf);
-}
-
-@font-face {
-  font-family: ibmplexmonobold;
-  src: url(fonts/IBMPlexMono-Bold.ttf);
-}
-
-@font-face {
-  font-family: ibmplexsans;
-  src: url(fonts/IBMPlexSans-Light.ttf);
-}
-
-@font-face {
-  font-family: ibmplexsanssemibold;
-  src: url(fonts/IBMPlexSans-SemiBold.ttf);
-}
-
 /*barra de navegacion*/
 #logo {
   width: 36px;
@@ -45,7 +25,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  font-family: ibmplexmono;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   padding-left: 3%;
   padding-right: 6%;
@@ -84,11 +64,11 @@ input {
 }
 
 .portal {
-  font-family: ibmplexmono;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 p {
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   width: 80%;
 }
 
@@ -97,17 +77,14 @@ h1 .blue {
 }
 
 h1 {
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 64px;
 }
 
-.titulo {
+header {
   position: relative;
   right: 15%;
   margin: 4%;
-}
-
-.titulo {
   height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,14 +100,18 @@ h1 {
           transform: translateX(20%);
 }
 
+header button {
+  font-size: 1.5vw;
+  width: 20vw;
+}
+
 button {
-  font-size: 24px;
   margin-top: 56px;
   height: 56px;
-  width: 30vw;
+  width: 15vw;
   height: 56px;
   background-color: #00F3BB;
-  font-family: ibmplexmono;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   cursor: pointer;
   -webkit-transition: color 1s;
@@ -156,7 +137,7 @@ button:hover {
 }
 
 .podcasts h2 {
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   color: white;
   font-size: 50px;
   -webkit-transform: translate(10%, 320%);
@@ -187,6 +168,7 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: hidden;
 }
 
 /*donde*/
@@ -206,14 +188,14 @@ iframe {
 
 .donde .box h2 {
   font-size: 48px;
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   -webkit-transform: translate(90%, -20%);
           transform: translate(90%, -20%);
 }
 
 .donde .box p {
   font-size: 18px;
-  font-family: ibmplexmono;
+  font-family: 'IBM Plex Mono', monospace;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -235,7 +217,7 @@ iframe {
 }
 
 .invitados h2 {
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 300%;
   -webkit-transform: translateX(15%);
           transform: translateX(15%);
@@ -260,7 +242,7 @@ iframe {
 .algunostemas h2 {
   font-size: 7vmin;
   position: relative;
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   left: 10%;
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
@@ -288,7 +270,7 @@ iframe {
 }
 
 .algunostemas .nuestrostemas div p {
-  font-family: ibmplexsanssemibold;
+  font-family: 'IBM Plex Sans', sans-serifsemibold;
   font-size: 1.7vw;
   width: 15vw;
 }
@@ -301,7 +283,7 @@ iframe {
   height: 60vh;
   font-size: 2vw;
   color: white;
-  font-family: ibmplexsans;
+  font-family: 'IBM Plex Sans', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,8 +317,8 @@ footer {
 }
 
 footer p {
-  font-size: 18px;
-  font-family: ibmplexmono;
+  font-size: 1.5vw;
+  font-family: 'IBM Plex Mono', monospace;
   -webkit-transform: translate(5%, 100%);
           transform: translate(5%, 100%);
 }
