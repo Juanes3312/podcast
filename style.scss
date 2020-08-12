@@ -33,8 +33,8 @@
     position: relative;
     left: 5%;
     transform: translateY(75%);
-   
-} 
+
+}
 
 
 
@@ -52,7 +52,7 @@ nav li {
     padding-right: 6%;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
     color: #060A24;
 
@@ -64,17 +64,17 @@ nav li a{
     width: 100%;
 }
 
-    input{
-        display: none;
-    }
+input {
+    display: none;
+}
 
-    #equis{
-        display: none;
-    }
+#equis {
+    display: none;
+}
 
-    #rayas{
-        display: none;
-    }
+#rayas {
+    display: none;
+}
 
 /*titulo*/
 .world {
@@ -98,10 +98,10 @@ h1 .blue {
 h1 {
     font-family: ibmplexsans;
     font-size: 64px;
-    
+
 }
 
-.titulo{
+.titulo {
     position: relative;
     right: 15%;
     margin: 4%;
@@ -128,7 +128,8 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: color 1s;
-    a{
+
+    a {
         text-decoration: none;
         color: #060A24;
     }
@@ -235,16 +236,16 @@ iframe {
 
 /*nuestros temas*/
 .algunostemas {
-    
 
-        h2 {
-            font-size: 7vmin;
-            position: relative;
-            font-family: ibmplexsans;
-            left: 10%;
-            transform: translateY(-40%);
-        }
-    
+
+    h2 {
+        font-size: 7vmin;
+        position: relative;
+        font-family: ibmplexsans;
+        left: 10%;
+        transform: translateY(-40%);
+    }
+
 
     .nuestrostemas {
 
@@ -270,7 +271,7 @@ iframe {
             }
         }
 
-       
+
         height:700%;
         width: 10vw;
     }
@@ -282,14 +283,14 @@ iframe {
 .ultimasnovedades {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
-    height: 60vh ;
+    height: 60vh;
     font-size: 2vw;
     color: white;
     font-family: ibmplexsans;
     display: flex;
 
-    
-    h2{
+
+    h2 {
         display: flex;
         position: relative;
         align-items: center;
