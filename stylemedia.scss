@@ -1,44 +1,348 @@
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    h1{
-        font-size: 30px;
+    body{
+        overflow-x: hidden;
     }
 
-    p{
-        font-size: 14px;
-    }
+    /*titulo*/
+    .titulo {
+        h1 {
+            font-size: 7vw;
+            position: relative;
+            
+            display: inline-block;
+            width: auto;
+        }
 
-    
-
-    .btn-menu{
-        display: inline-block; 
-        input{
-            display: unset;
+        p {
+            font-size: 80%;
+            position: relative;
+            
         }
     }
-.menu{
-    position: absolute;
-    border: 1px solid blue;
-    width: 100%;
-    transform: translateX(100%);
-    transition: all 0.3s;
-}
-    nav ul{
-        display: flex; 
-        flex-direction: column;
-    }
 
-    .donde{
-        display: block;
-    }
+    /* barra de navegacion*/
+    
+    
+      #rayas{
+            display: flex;
+            justify-content: flex-end;
+            transform: translateX(-8%);
+        }
 
-    label:hover{
-        cursor: pointer;
-        background: rgba(0, 0, 0, 0.3);
-    }
-    #btn-menu :checked ~ *.menu{
+
+    .menu{
         position: absolute;
-        transform: translateX(-100%);
+        background-color: #0000ff;
+        width: 100%;
+        transform: translateY(-160%);
+        animation: 1s all;
+    }
+
+    .menu li{
+        padding-bottom: 20%;
+        
+    }
+
+    .menu li a{
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transform: translateX(-80vw);
+        transition: all 0.4s;
+
+    }
+
+    nav ul{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #btn-menu:checked ~ .menu{
+            transform: translateY(6%);
+            transition: all 0.4s;
+        }
+
+    #btn-menu:checked ~ *{
+        position: relative;
+        
     } 
+
+    #btn-menu:checked~.equis{
+        display: block;
+        position: relative;
+        left: 90%;
+    }
+
+    #btn-menu:checked ~ .rayas{
+        display: none;
+    }
+    
+
+    #rayas:hover {
+        cursor: pointer;
+    }
+
+
+   
+
+
+
+    /*episodios*/
+
+
+    .podcasts {
+        height: 170vw;
+        clip-path: polygon(0 4%, 100% 0%, 100% 85%, 0% 100%);
+
+        h2 {
+            position: relative;
+            bottom: 8%;
+        }
+    }
+
+    .episodios {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(0%);
+        height: 50%;
+
+      
+
+        .box {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            transform: translateY(50%);
+            margin: 0%;
+            width: 100%;
+            
+        }
+
+        iframe {
+            align-content: center;
+            width: 80vw;
+            height: 30vw;
+           
+        }
+    }
+
+    /*donde*/
+
+    .donde {
+
+        display: block;
+
+        .phone {
+            position: relative;
+            right: 25%;
+        }
+
+        .box {
+            right: 15%;
+            
+            h2 {
+                position: relative;
+                right: 25%;
+
+            }
+
+            p {
+
+                position: relative;
+                right: 10%;
+            }
+
+            position: relative;
+            display: block;
+            transform: translateY(-85%);
+            right: 10vw;
+        }
+    }
+
+    /*invitados*/
+
+    .invitados {
+        transform: translateY(-8%);
+        h2{
+            left: 2%;
+            font-size: 8vw;
+        }
+    }
+
+
+    .fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*nuestros temas*/
+    .algunostemas {
+        position: relative;
+        bottom: 12vw;
+
+        h2 {
+            font-size: 7vw;
+            position: relative;
+            left: 7vw;
+            bottom: 2vw;
+        }
+
+        .nuestrostemas {
+            div {
+                p {
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
+
+    /*ultimas novedades*/
+
+   
+
+    .ultimasnovedades {
+        
+        display: flex;
+        height: 90vh;
+
+        h2 {
+            display: flex;
+            position: relative;
+            top: 10%;
+            transform: translateX(-20%);
+            font-size: 4.5vw;
+        }
+        
+        button{
+            transform: translateX(-80%);
+            font-size: 2vw;
+        }
+        
+    }
+
+    /*footer*/
+    footer {
+        P {
+            position: absolute;
+            right: 49%;
+            width: 50%;
+            transform: translateY(1%);
+
+        }
+
+    }
+
+
+}
+
+/*--------mobile first--------*/
+
+
+@media (max-width:480px) {
+
+/*nav*/
+
+.menu ul{
+    transform: translateX(-70vw);
+}
+
+
+
+    /*titulo*/
+
+    #logo{
+        transform: translate(20%, 40%);
+    }
+
+    .titulo {
+        button {
+            position: relative;
+            bottom: 15%;
+        }
+
+        h1 {
+            font-size: 30px;
+
+
+
+            p {
+                left: 0%;
+                font-size: 45px;
+            }
+
+        }
+    }
+
+    /* episodios*/
+
+    .podcasts{
+        height: 260vw;
+        h2{
+            bottom: 10%;
+        }
+    }
+
+
+    .episodios {
+
+        height: 60%;
+        overflow: hidden;
+        height: 110%;
+        height: 130%;
+
+        h2{
+            bottom: 30%;
+        }
+
+        iframe {
+           padding-bottom: 10%;
+           overflow: hidden;
+           height: 100%;
+            body{
+                overflow: hidden;
+            }
+
+        }
+
+    }
+
+    /*donde*/
+
+
+    .donde {
+        .phone {
+            img{
+                width: 90vw;
+                height: 150vw;
+            }
+            position: relative;
+            right: 40%;
+        }
+
+        .box {
+            position: relative;
+            right: 35%;
+            width: 100%;
+            transform: translate(-6%, -48%);
+            h2{
+                font-size: 5vw;
+            }
+            p{
+                font-size: 4vw;
+            }
+        }
+    }
+
+    .ultimasnovedades{
+    height: 70vh;
+    }
 
 }

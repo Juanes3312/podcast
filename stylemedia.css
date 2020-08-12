@@ -1,26 +1,100 @@
 @media (max-width: 768px) {
-  h1 {
-    font-size: 30px;
+  body {
+    overflow-x: hidden;
   }
-  p {
-    font-size: 14px;
-  }
-  .btn-menu {
+  /*titulo*/
+  .titulo h1 {
+    font-size: 7vw;
+    position: relative;
     display: inline-block;
+    width: auto;
   }
-  .btn-menu input {
-    display: unset;
+  .titulo p {
+    font-size: 80%;
+    position: relative;
+  }
+  /* barra de navegacion*/
+  #rayas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-transform: translateX(-8%);
+            transform: translateX(-8%);
   }
   .menu {
     position: absolute;
-    border: 1px solid blue;
+    background-color: #0000ff;
     width: 100%;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transform: translateY(-160%);
+            transform: translateY(-160%);
+    -webkit-animation: 1s all;
+            animation: 1s all;
+  }
+  .menu li {
+    padding-bottom: 20%;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: #ffff;
+  }
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transform: translateX(-80vw);
+            transform: translateX(-80vw);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
   }
   nav ul {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  #btn-menu:checked ~ .menu {
+    -webkit-transform: translateY(6%);
+            transform: translateY(6%);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  #btn-menu:checked ~ * {
+    position: relative;
+  }
+  #btn-menu:checked ~ .equis {
+    display: block;
+    position: relative;
+    left: 90%;
+  }
+  #btn-menu:checked ~ .rayas {
+    display: none;
+  }
+  #rayas:hover {
+    cursor: pointer;
+  }
+  /*episodios*/
+  .podcasts {
+    height: 170vw;
+    -webkit-clip-path: polygon(0 4%, 100% 0%, 100% 85%, 0% 100%);
+            clip-path: polygon(0 4%, 100% 0%, 100% 85%, 0% 100%);
+  }
+  .podcasts h2 {
+    position: relative;
+    bottom: 8%;
+  }
+  .episodios {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,18 +102,194 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    height: 50%;
   }
+  .episodios .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    margin: 0%;
+    width: 100%;
+  }
+  .episodios iframe {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 80vw;
+    height: 30vw;
+  }
+  /*donde*/
   .donde {
     display: block;
   }
-  label:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
+  .donde .phone {
+    position: relative;
+    right: 25%;
   }
-  #btn-menu :checked ~ *.menu {
+  .donde .box {
+    right: 15%;
+    position: relative;
+    display: block;
+    -webkit-transform: translateY(-85%);
+            transform: translateY(-85%);
+    right: 10vw;
+  }
+  .donde .box h2 {
+    position: relative;
+    right: 25%;
+  }
+  .donde .box p {
+    position: relative;
+    right: 10%;
+  }
+  /*invitados*/
+  .invitados {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  .invitados h2 {
+    left: 2%;
+    font-size: 8vw;
+  }
+  .fotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*nuestros temas*/
+  .algunostemas {
+    position: relative;
+    bottom: 12vw;
+  }
+  .algunostemas h2 {
+    font-size: 7vw;
+    position: relative;
+    left: 7vw;
+    bottom: 2vw;
+  }
+  .algunostemas .nuestrostemas div p {
+    font-size: 2.5vw;
+  }
+  /*ultimas novedades*/
+  .ultimasnovedades {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90vh;
+  }
+  .ultimasnovedades h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 10%;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+    font-size: 4.5vw;
+  }
+  .ultimasnovedades button {
+    -webkit-transform: translateX(-80%);
+            transform: translateX(-80%);
+    font-size: 2vw;
+  }
+  /*footer*/
+  footer P {
     position: absolute;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    right: 49%;
+    width: 50%;
+    -webkit-transform: translateY(1%);
+            transform: translateY(1%);
+  }
+}
+
+/*--------mobile first--------*/
+@media (max-width: 480px) {
+  /*nav*/
+  .menu ul {
+    -webkit-transform: translateX(-70vw);
+            transform: translateX(-70vw);
+  }
+  /*titulo*/
+  #logo {
+    -webkit-transform: translate(20%, 40%);
+            transform: translate(20%, 40%);
+  }
+  .titulo button {
+    position: relative;
+    bottom: 15%;
+  }
+  .titulo h1 {
+    font-size: 30px;
+  }
+  .titulo h1 p {
+    left: 0%;
+    font-size: 45px;
+  }
+  /* episodios*/
+  .podcasts {
+    height: 260vw;
+  }
+  .podcasts h2 {
+    bottom: 10%;
+  }
+  .episodios {
+    height: 60%;
+    overflow: hidden;
+    height: 110%;
+    height: 130%;
+  }
+  .episodios h2 {
+    bottom: 30%;
+  }
+  .episodios iframe {
+    padding-bottom: 10%;
+    overflow: hidden;
+    height: 100%;
+  }
+  .episodios iframe body {
+    overflow: hidden;
+  }
+  /*donde*/
+  .donde .phone {
+    position: relative;
+    right: 40%;
+  }
+  .donde .phone img {
+    width: 90vw;
+    height: 150vw;
+  }
+  .donde .box {
+    position: relative;
+    right: 35%;
+    width: 100%;
+    -webkit-transform: translate(-6%, -48%);
+            transform: translate(-6%, -48%);
+  }
+  .donde .box h2 {
+    font-size: 5vw;
+  }
+  .donde .box p {
+    font-size: 4vw;
+  }
+  .ultimasnovedades {
+    height: 70vh;
   }
 }
 /*# sourceMappingURL=stylemedia.css.map */

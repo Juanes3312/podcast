@@ -1,6 +1,6 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
@@ -27,32 +27,10 @@
 #logo {
   width: 36px;
   height: 36px;
-}
-
-.btn-menu {
-  display: none;
-  -webkit-transform: translateX(95%);
-          transform: translateX(95%);
-  width: 100%;
-}
-
-.btn-menu input {
-  display: none;
-}
-
-.btn-menu label:hover {
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.btn-menu i {
-  margin: 3%;
-}
-
-nav img {
-  display: inline;
-  -webkit-transform: translate(200%, 98%);
-          transform: translate(200%, 98%);
+  position: relative;
+  left: 5%;
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
 }
 
 nav ul {
@@ -73,6 +51,11 @@ nav li {
   padding-right: 6%;
 }
 
+nav li a {
+  text-decoration: none;
+  color: #060A24;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +64,18 @@ nav li {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
+}
+
+input {
+  display: none;
+}
+
+#equis {
+  display: none;
+}
+
+#rayas {
+  display: none;
 }
 
 /*titulo*/
@@ -94,22 +89,26 @@ nav li {
 
 p {
   font-family: ibmplexsans;
+  width: 80%;
 }
 
-h1 p {
+h1 .blue {
   color: blue;
-  display: inline-block;
 }
 
 h1 {
   font-family: ibmplexsans;
   font-size: 64px;
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
 }
 
 .titulo {
-  height: 50vmin;
+  position: relative;
+  right: 15%;
+  margin: 4%;
+}
+
+.titulo {
+  height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,14 +124,10 @@ h1 {
 }
 
 button {
-  width: 10%;
-}
-
-button {
   font-size: 24px;
   margin-top: 56px;
   height: 56px;
-  width: 226px;
+  width: 30vw;
   height: 56px;
   background-color: #00F3BB;
   font-family: ibmplexmono;
@@ -140,6 +135,11 @@ button {
   cursor: pointer;
   -webkit-transition: color 1s;
   transition: color 1s;
+}
+
+button a {
+  text-decoration: none;
+  color: #060A24;
 }
 
 button:hover {
@@ -159,8 +159,8 @@ button:hover {
   font-family: ibmplexsans;
   color: white;
   font-size: 50px;
-  -webkit-transform: translate(10%, 360%);
-          transform: translate(10%, 360%);
+  -webkit-transform: translate(10%, 320%);
+          transform: translate(10%, 320%);
 }
 
 .episodios {
@@ -168,13 +168,25 @@ button:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
+  -webkit-transform: translateY(60%);
+          transform: translateY(60%);
+}
+
+.episodios .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 iframe {
   width: 90%;
-  height: 323px;
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*donde*/
@@ -182,6 +194,8 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
 }
 
 .donde .box {
@@ -193,8 +207,8 @@ iframe {
 .donde .box h2 {
   font-size: 48px;
   font-family: ibmplexsans;
-  -webkit-transform: translate(100%, -50%);
-          transform: translate(100%, -50%);
+  -webkit-transform: translate(90%, -20%);
+          transform: translate(90%, -20%);
 }
 
 .donde .box p {
@@ -211,7 +225,7 @@ iframe {
 }
 
 .phone img {
-  height: 750px;
+  height: 751px;
 }
 
 /*invitados*/
@@ -222,7 +236,7 @@ iframe {
 
 .invitados h2 {
   font-family: ibmplexsans;
-  font-size: 48px;
+  font-size: 300%;
   -webkit-transform: translateX(15%);
           transform: translateX(15%);
 }
@@ -238,65 +252,45 @@ iframe {
 
 .fotos img {
   display: block;
-  width: 600px;
-  height: 364px;
+  width: 100%;
+  height: 20%;
 }
 
 /*nuestros temas*/
-.algunostemas {
-  -webkit-transform: translateY(-18%);
-          transform: translateY(-18%);
-}
-
 .algunostemas h2 {
-  font-size: 48px;
+  font-size: 7vmin;
+  position: relative;
   font-family: ibmplexsans;
-  -webkit-transform: translate(20%, 39%);
-          transform: translate(20%, 39%);
+  left: 10%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
 }
 
 .algunostemas .nuestrostemas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (280px)[4];
-      grid-template-columns: repeat(4, 280px);
-  justify-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: 8%;
+  height: 700%;
+  width: 10vw;
 }
 
 .algunostemas .nuestrostemas div {
-  width: auto;
+  justify-items: center;
+  padding-left: 55%;
 }
 
-.algunostemas .nuestrostemas div #trabajo {
-  -webkit-transform: translateX(33%);
-          transform: translateX(33%);
-}
-
-.algunostemas .nuestrostemas div #repensando {
-  -webkit-transform: translateX(22%);
-          transform: translateX(22%);
-}
-
-.algunostemas .nuestrostemas div #bases {
-  -webkit-transform: translateX(38%);
-          transform: translateX(38%);
-}
-
-.algunostemas .nuestrostemas div #seguridad {
-  -webkit-transform: translateX(6%);
-          transform: translateX(6%);
+.algunostemas .nuestrostemas div img {
+  position: relative;
+  left: 0%;
+  width: 10vw;
 }
 
 .algunostemas .nuestrostemas div p {
   font-family: ibmplexsanssemibold;
-  font-size: 24px;
+  font-size: 1.7vw;
+  width: 15vw;
 }
 
 /*ultimas novedades*/
@@ -304,49 +298,52 @@ iframe {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   -webkit-clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
-  height: 718px;
-  font-size: 38px;
+  height: 60vh;
+  font-size: 2vw;
   color: white;
   font-family: ibmplexsans;
-}
-
-.ultimasnovedades .novedades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 518px;
 }
 
 .ultimasnovedades h2 {
-  -webkit-transform: translate(65%, 180%);
-          transform: translate(65%, 180%);
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 30%;
 }
 
 .ultimasnovedades button {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 18px;
-  -webkit-transform: translate(-15%, 50%);
-          transform: translate(-15%, 50%);
-  width: 345px;
+  font-size: 1.5vw;
+  position: relative;
+  bottom: 7vw;
+  right: 6vw;
+  width: 30vw;
+  justify-items: center;
 }
 
 /*footer*/
 footer {
-  height: 80px;
+  height: 4.5vmax;
 }
 
 footer p {
   font-size: 18px;
   font-family: ibmplexmono;
-  -webkit-transform: translate(10%, 100%);
-          transform: translate(10%, 100%);
+  -webkit-transform: translate(5%, 100%);
+          transform: translate(5%, 100%);
 }
 
 .brands {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast</title>.
+  <title>Podcast</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="stylemedia.css">
   <link rel="shortcut icon" href="imagenes/logo.svg" type="image/x-icon">
@@ -13,64 +13,60 @@
 </head>
 
 <body>
-  <nav>
-    <img src="imagenes/logo.svg" name="logo" id="logo" alt="Logo">
-    <div class="btn-menu">
-      <input type="checkbox" id="btn-menu" class="btn-menu">
-      <label for="btn-menu"><i class="fas fa-bars"></i></label>
-    </div>
-    <div class="menu" id="menu">
-      <ul>
-        <li>
-          <div>EPISODIOS</div>
-        </li>
-        <li>
-          <div>NOSOTROS</div>
-        </li>
-        <li>
-          <div>ENTREVISTAS</div>
-        </li>
-        <li>
-          <div>TOPICAS</div>
-        </li>
-      </ul>
-    </div>
+  <img src="imagenes/logo.svg" name="logo" id="logo" alt="Logo">
+  <input type="checkbox" id="btn-menu">
+  <label for="btn-menu" id="rayas" class="rayas"><i class="fas fa-bars"></i></label>
+  <label for="btn-menu" id="equis" class="equis"><i class="fas fa-times"></i></label>
+  <nav class="menu">
+    <ul>
+      <li>
+        <a href="#episodios">EPISODIOS</a>
+      </li>
+      <li>
+        <a href="#nosotros">NOSOTROS</a>
+      </li>
+      <li>
+        <a href="#invitados">ENTREVISTAS</a>
+      </li>
+      <li>
+        <a href="#temas">TOPICAS</a>
+      </li>
+    </ul>
   </nav>
 
   <header>
     <div class="titulo">
-      <h1>Hello <span class="world">world</span> pale blue dot<p>.</p>
-      </h1>
+      <h1>Hello <span class="world">world</span> pale blue dot<span class="blue">.</span></h1>
       <p class="portal">El portal de podcasts que explora el mundo de la
-        programación y </br> la tecnología. Nuevos episodios,
+        programación y la tecnología. Nuevos episodios,
         todos los jueves cada 15 días.</p>
       <button>
         <p>Conoce mas</p>
       </button>
     </div>
   </header>
-  <section class="podcasts">
+  <section class="podcasts" id="episodios">
     <h2>Episodios</h2>
     <div class="episodios">
       <div class="box">
-        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="20%" height="232"
-          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" frameborder="0"
+          allowtransparency="true" allow="encrypted-media" scrolling="no"></iframe>
       </div>
       <div class="box">
-        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" width="20%" height="232"
-          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" frameborder="0"
+          allowtransparency="true" allow="encrypted-media" scrolling="no"></iframe>
       </div>
       <div class="box">
-        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" width="20%" height="232"
-          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" frameborder="0"
+          allowtransparency="true" allow="encrypted-media" scrolling="no"></iframe>
       </div>
       <div class="box">
-        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" width="20%" height="232"
-          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" frameborder="0"
+          allowtransparency="true" allow="encrypted-media" scrolling="no"></iframe>
       </div>
     </div>
   </section>
-  <div class="donde">
+  <div class="donde" id="nosotros">
     <div class="phone">
       <img src="imagenes/phone.png" name="phone" id="phone" alt="imagen phone">
     </div>
@@ -87,59 +83,59 @@
       </P>
     </div>
   </div>
-  <div class="invitados">
+  <div class="invitados" id="invitados">
     <h2>Invitadas/os estelares</h2>
-      <div class="fotos">
-        <div class="box">   
-          <img src="imagenes/grace-hopper.png" name="grace" id="grace" alt="grace">
-        </div>
-        <div class="box">
-          <img src="imagenes/Katie-Bouman.png" name="Katie" id="katie" alt="katie">
-        </div>
-        <div class="box"> 
-          <img src="imagenes/Margaret_Hamilton.png" name="marget" id="marget" alt="foto de marget">
-        </div>
-        <div class="box"> 
-          <img src="imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" name="era" id="era" alt="foto de era">
-        </div>
-        <div class="box">
-          <img src="imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
-          name="Eniac" id="Eniac" alt="eniac">
-        </div>
-        <div class="box">
-          <img src="imagenes/susan-kare.png" name="susan-kare" id="susan" alt="foto de susankare">
-        </div>
+    <div class="fotos">
+      <div class="box">
+        <img src="imagenes/grace-hopper.png" name="grace" id="grace" alt="grace">
       </div>
+      <div class="box">
+        <img src="imagenes/Katie-Bouman.png" name="Katie" id="katie" alt="katie">
+      </div>
+      <div class="box">
+        <img src="imagenes/Margaret_Hamilton.png" name="marget" id="marget" alt="foto de marget">
+      </div>
+      <div class="box">
+        <img src="imagenes/An E.R.A.Univac 1103 computer in the 1950s.png" name="era" id="era" alt="foto de era">
+      </div>
+      <div class="box">
+        <img
+          src="imagenes/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+          name="Eniac" id="Eniac" alt="eniac">
+      </div>
+      <div class="box">
+        <img src="imagenes/susan-kare.png" name="susan-kare" id="susan" alt="foto de susankare">
+      </div>
+    </div>
   </div>
-  <section class="algunostemas">
+  <section class="algunostemas" id="temas">
     <h2>Algunos de nuestros temas</h2>
     <div class="nuestrostemas">
-      <div>
+      <div class="box">
         <img src="imagenes/icon1.svg" name="trabajo remoto" id="trabajo" alt="foto de trabajo remoto">
         <p>Trabajo remoto</p>
       </div>
-      <div>
+      <div class="box">
         <img src="imagenes/icon2.svg" name="repensando" id="repensando" alt="foto de repensando">
         <p>Repensando la </br> programación</p>
       </div>
-      <div>
+      <div class="box">
         <img src="imagenes/icon3.svg" name="bases" id="bases" alt=" foto de bases">
         <p>Bases del codigo</p>
       </div>
-      <div>
-      <img src="imagenes/icon4.svg" name="Seguridad" id="seguridad" alt="foto de seguridad">
-      <p>Seguridad </br>informatica</p>
+      <div class="box">
+        <img src="imagenes/icon4.svg" name="Seguridad" id="seguridad" alt="foto de seguridad">
+        <p>Seguridad </br>informatica</p>
       </div>
     </div>
+
   </section>
   <section class="ultimasnovedades">
-    <div class="novedades">
       <H2> ¿Quieres las ultimas novedades?</H2>
-      <button> ESCUCHÁ LOS EPISODIOS</button>
-    </div>
+      <button> <a href="#episodios"> LOS EPISODIOS</a></button>
   </section>
   <footer>
-    <p>© 2019— Hello blue pale dot. </p>
+    <p>© 2020— Hello blue pale dot. </p>
     <div class="brands">
       <div>
         <span class="iconify" data-icon="fa-brands:telegram" data-inline="false"></span>

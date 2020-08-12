@@ -1,6 +1,6 @@
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
@@ -23,38 +23,22 @@
     src: url(fonts/IBMPlexSans-SemiBold.ttf);
 }
 
+
+
+
 /*barra de navegacion*/
 #logo {
     width: 36px;
     height: 36px;
-}
+    position: relative;
+    left: 5%;
+    transform: translateY(75%);
+   
+} 
 
-.btn-menu {
-    display: none;
-    transform: translateX(95%);
-    width: 100%;
 
-    input {
-        display: none;
-    }
-
-    label:hover {
-        cursor: pointer;
-        background-color: rgba(0, 0green, 0blue, 0.3alpha);
-    }
-
-    i {
-        margin: 3%;
-    }
-}
-
-nav img {
-    display: inline;
-    transform: translate(200%, 98%);
-}
 
 nav ul {
-
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -68,11 +52,29 @@ nav li {
     padding-right: 6%;
 }
 
+nav li a{
+    text-decoration: none;
+    color: #060A24;
+
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
+
+    input{
+        display: none;
+    }
+
+    #equis{
+        display: none;
+    }
+
+    #rayas{
+        display: none;
+    }
 
 /*titulo*/
 .world {
@@ -85,46 +87,51 @@ nav li {
 
 p {
     font-family: ibmplexsans;
+    width: 80%;
 }
 
-h1 p {
+h1 .blue {
     color: blue;
-    display: inline-block;
+
 }
 
 h1 {
     font-family: ibmplexsans;
     font-size: 64px;
-    transform: translateX(-5%);
+    
 }
 
-
+.titulo{
+    position: relative;
+    right: 15%;
+    margin: 4%;
+}
 
 .titulo {
-    height: 50vmin;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transform: translateX(20%);
 }
 
-button {
-    width: 10%;
 
-}
 
 button {
     font-size: 24px;
     margin-top: 56px;
     height: 56px;
-    width: 226px;
+    width: 30vw;
     height: 56px;
     background-color: #00F3BB;
     font-family: ibmplexmono;
     font-weight: bold;
     cursor: pointer;
-    -webkit-transition: color 1s;
     transition: color 1s;
+    a{
+        text-decoration: none;
+        color: #060A24;
+    }
 
     &:hover {
         background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
@@ -144,25 +151,32 @@ button {
         font-family: ibmplexsans;
         color: white;
         font-size: 50px;
-        transform: translate(10%, 360%);
+        transform: translate(10%, 320%);
     }
 }
 
 .episodios {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    transform: translateY(40%);
+    transform: translateY(60%);
+
+    .box {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 iframe {
     width: 90%;
-    height: 323px;
+    height: 200px;
+    justify-content: center;
 }
 
 /*donde*/
 
 .donde {
     display: flex;
+    transform: translateX(-15%);
 
     .box {
 
@@ -173,7 +187,7 @@ iframe {
         h2 {
             font-size: 48px;
             font-family: ibmplexsans;
-            transform: translate(100%, -50%);
+            transform: translate(90%, -20%);
         }
 
         p {
@@ -190,7 +204,7 @@ iframe {
     transform: translate(60%, -33%);
 
     img {
-        height: 750px;
+        height: 751px;
     }
 }
 
@@ -201,7 +215,7 @@ iframe {
 
     h2 {
         font-family: ibmplexsans;
-        font-size: 48px;
+        font-size: 300%;
         transform: translateX(15%);
     }
 }
@@ -214,54 +228,51 @@ iframe {
 
     img {
         display: block;
-        width: 600px;
-        height: 364px;
+        width: 100%;
+        height: 20%;
     }
 }
 
 /*nuestros temas*/
 .algunostemas {
-    transform: translateY(-18%);
+    
 
-    h2 {
-        font-size: 48px;
-        font-family: ibmplexsans;
-        transform: translate(20%, 39%);
-    }
+        h2 {
+            font-size: 7vmin;
+            position: relative;
+            font-family: ibmplexsans;
+            left: 10%;
+            transform: translateY(-40%);
+        }
+    
 
     .nuestrostemas {
 
+        display: flex;
+        position: relative;
+        left: 8%;
+
         div {
-            width: auto;
+            justify-items: center;
+            padding-left: 55%;
 
-            #trabajo {
-                transform: translateX(33%);
-            }
+            img {
+                position: relative;
+                left: 0%;
+                width: 10vw;
 
-            #repensando {
-                transform: translateX(22%);
-            }
-
-            #bases {
-                transform: translateX(38%);
-            }
-
-            #seguridad {
-                transform: translateX(6%);
             }
 
             p {
                 font-family: ibmplexsanssemibold;
-                font-size: 24px;
+                font-size: 1.7vw;
+                width: 15vw;
             }
         }
 
-        display:grid;
-        grid-template-columns:repeat(4, 280px);
-        justify-items:center;
-        justify-content:center;
-        align-items:center;
-        height:400px;
+       
+        height:700%;
+        width: 10vw;
     }
 
 }
@@ -271,45 +282,49 @@ iframe {
 .ultimasnovedades {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
-    height: 718px;
-    font-size: 38px;
+    height: 60vh ;
+    font-size: 2vw;
     color: white;
     font-family: ibmplexsans;
+    display: flex;
 
-    .novedades {
+    
+    h2{
         display: flex;
-        height: 518px;
-    }
-
-    h2 {
-        transform: translate(65%, 180%);
-        align-self: center;
+        position: relative;
+        align-items: center;
+        left: 30%;
     }
 
     button {
         align-self: flex-end;
-        font-size: 18px;
-        transform: translate(-15%, 50%);
-        width: 345px;
+        font-size: 1.5vw;
+        position: relative;
+        bottom: 7vw;
+        right: 6vw;
+        width: 30vw;
+        justify-items: center;
     }
 }
 
 /*footer*/
 
-footer{
-    height: 80px;
-    p{
+footer {
+    height: 4.5vmax;
+
+    p {
         font-size: 18px;
         font-family: ibmplexmono;
-        transform: translate(10%, 100%);
+        transform: translate(5%, 100%);
     }
 }
 
-
 .brands {
+    transform: translateX(-5%);
     display: flex;
     flex-direction: row-reverse;
-   div{
-       padding-left: 2%;
-   }
+
+    div {
+        padding-left: 2%;
+    }
 }
