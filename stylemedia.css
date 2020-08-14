@@ -128,13 +128,14 @@
             transform: translateY(50%);
     margin: 0%;
     width: 100%;
+    overflow: hidden;
   }
   .episodios iframe {
     -ms-flex-line-pack: center;
         align-content: center;
     width: 80vw;
     height: 30vw;
-    overflow-y: hidden;
+    overflow: hidden;
   }
   /*donde*/
   .donde {
@@ -271,9 +272,6 @@
     padding-bottom: 10%;
     overflow: hidden;
     height: 100%;
-  }
-  .episodios iframe body {
-    overflow: hidden;
   }
   /*donde*/
   .donde .phone {
