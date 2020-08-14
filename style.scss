@@ -88,6 +88,7 @@ header{
     flex-direction: column;
     justify-content: center;
     transform: translateX(20%);
+    
     button{
         font-size: 1.5vw;
         width: 20vw;
@@ -277,14 +278,19 @@ iframe {
         left: 30%;
     }
 
-    button {
+    a {
         align-self: flex-end;
         font-size: 1.5vw;
         position: relative;
         bottom: 7vw;
         right: 6vw;
-        width: 30vw;
         justify-items: center;
+
+
+    }
+    
+    button{
+        width: 30vw;
     }
 }
 
@@ -305,7 +311,17 @@ footer {
     display: flex;
     flex-direction: row-reverse;
 
-    div {
+
+    a {
         padding-left: 2%;
+        text-decoration-color: black;
+    }
+
+    a:link{
+        color: black;
+    }
+
+    a:visited{
+        color: black;
     }
 }

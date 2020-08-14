@@ -300,15 +300,18 @@ iframe {
   left: 30%;
 }
 
-.ultimasnovedades button {
+.ultimasnovedades a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   font-size: 1.5vw;
   position: relative;
   bottom: 7vw;
   right: 6vw;
-  width: 30vw;
   justify-items: center;
+}
+
+.ultimasnovedades button {
+  width: 30vw;
 }
 
 /*footer*/
@@ -335,7 +338,17 @@ footer p {
           flex-direction: row-reverse;
 }
 
-.brands div {
+.brands a {
   padding-left: 2%;
+  -webkit-text-decoration-color: black;
+          text-decoration-color: black;
+}
+
+.brands a:link {
+  color: black;
+}
+
+.brands a:visited {
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

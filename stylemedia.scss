@@ -120,20 +120,21 @@
       
 
         .box {
+            position: relative;
             display: flex;
             align-items: center;
-            flex-direction: column;
-            transform: translateY(50%);
-            margin: 0%;
+            top: 15%;
             width: 100%;
-            overflow: hidden;
+            height: 100%;
         }
 
         iframe {
+            position: relative;
             align-content: center;
             width: 80vw;
             height: 30vw;
-           overflow: hidden;
+            top: 15%;
+            
         }
     }
 
@@ -299,28 +300,24 @@
 
     .episodios {
 
-        height: 60%;
-        overflow: hidden;
-        height: 110%;
-        height: 130%;
-
         h2{
             bottom: 30%;
         }
 
-        iframe {
-           padding-bottom: 10%;
-           overflow: hidden;
-           height: 100%;
+        .box{
+            position: relative;
             
-
+        }
+        
+        iframe {
+           position: relative;
+           height:100%;
+           padding-bottom: 15%;
         }
 
     }
 
     /*donde*/
-
-
     .donde {
         .phone {
             img{
