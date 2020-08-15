@@ -100,12 +100,7 @@ header {
           transform: translateX(20%);
 }
 
-header button {
-  font-size: 1.5vw;
-  width: 20vw;
-}
-
-button {
+.botones {
   margin-top: 56px;
   height: 56px;
   width: 15vw;
@@ -116,14 +111,12 @@ button {
   cursor: pointer;
   -webkit-transition: color 1s;
   transition: color 1s;
-}
-
-button a {
+  font-size: 2.4vw;
   text-decoration: none;
-  color: #060A24;
+  color: black;
 }
 
-button:hover {
+.botones:hover {
   background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
   color: #FFFFFF;
 }
@@ -310,8 +303,11 @@ iframe {
   justify-items: center;
 }
 
-.ultimasnovedades button {
-  width: 30vw;
+.ultimasnovedades .botones {
+  width: 20vw;
+  font-size: 2.5vw;
+  position: relative;
+  right: 1.5%;
 }
 
 /*footer*/
